@@ -1,0 +1,38 @@
+/* 
+Theme Name: Shop Isle Child
+Description: Shop Isle Child 
+Theme Author: Edu
+Author URL: http://eduardoayora.com
+Template: shop-isle 
+Version: 1.0.0 
+Text Domain: shopisle-child 
+*/
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.shop-footer {
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .shop-footer {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+}
+
+.shop-footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shop-footer a,
+.shop-footer i
+{
+    color: white !important;
+    text-decoration: none;
+}
