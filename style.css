@@ -37,11 +37,9 @@ footer {
     text-decoration: none;
 }
 
-/* .nav li a {
+.nav li a {
     font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-} */
+}
 
 .team-image img {
     height: 150px;
