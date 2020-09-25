@@ -58,6 +58,10 @@ hr.divider-w {
     display: none;
 }
 
-.page-template-template-about section.module {
+.page-template-template-about .module {
     padding-top: 0px;
+}
+
+.page-template-template-about .page-header-module.module {
+    padding-top: 190px;
 }
