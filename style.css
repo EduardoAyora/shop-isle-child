@@ -47,3 +47,19 @@ footer {
     height: 150px;
     width: 112px;
 }
+
+section.about-page-video {
+    display: none;
+}
+
+section.module-advantages {
+    display: none;
+}
+
+hr.divider-w {
+    display: none;
+}
+
+section.module {
+    padding-top: 0px;
+}
