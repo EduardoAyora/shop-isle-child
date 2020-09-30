@@ -24,9 +24,24 @@ foreach ( $items as $item_id => $item ) :
 
 	// eliminamos el atributo value de la metadata de envio gratis
 	// $log = get_stylesheet_directory() . '/woocommerce/emails/log.txt';
-	$meta_data_array = $item->get_meta_data()[0];
-	if (isset($meta_data_array->value)) {
-		$item->update_meta_data($meta_data_array->key, false);
+
+	// codigo ejemplo para log
+	// $file = fopen(get_stylesheet_directory() . '/woocommerce/emails/log.txt', "w");
+	// fwrite($file, $item . PHP_EOL);
+	// fclose($file);
+
+	$meta_data = $item->get_meta_data();
+	if(sizeof($meta_data) == 1) {
+		$meta_data_first_array = $meta_data[0];
+		if (isset($meta_data_first_array->value)) {
+			$item->update_meta_data($meta_data_first_array->key, false);
+		}
+	}
+	elseif(sizeof($meta_data) == 2) {
+		$meta_data_second_array = $meta_data[1];
+		if (isset($meta_data_second_array->value)) {
+			$item->update_meta_data($meta_data_second_array->key, false);
+		}
 	}
 
 	$product       = $item->get_product();
