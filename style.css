@@ -8,6 +8,38 @@ Version: 1.0.0
 Text Domain: shopisle-child 
 */
 
+.home .navbar-custom .nav li>a {
+    color: white !important;
+}
+
+.navbar-custom {
+    background-color: white !important;
+}
+
+.page .navbar-custom {
+    background-color: white !important;
+}
+
+.navbar-custom .nav li>a {
+    color: black !important;
+}
+
+.navbar-not-transparent {
+    background-color: white !important;
+}
+
+.navbar-custom.navbar-not-transparent .nav li>a {
+    color: black !important;
+}
+
+.navbar-cart-inner .icon-basket {
+    color: #cbc7c2 !important;
+}
+
+.navbar-cart .header-search:hover {
+    color: #cbc7c2 !important;
+}
+
 footer {
     background-color: black;
     color: white;
