@@ -16,7 +16,7 @@ function woo_change_order_received_text( $str, $order ) {
     $new_str = '<h3>Gracias. Tu pedido ha sido recibido.</h3>
     <p style="font-size:17px;">Dentro de poco nos comunicaremos contigo. O puedes consultar
     por tus productos mediante uno de los chats de WhatsApp:</p>' .
-    generate_new_wpp_button('+593997122275', $order->get_order_number()) .
+    generate_new_wpp_button('+593997122275', $order->get_order_number()) 
     // generate_new_wpp_button('+593984709259', $order->get_order_number())
     ;
     return $new_str;
